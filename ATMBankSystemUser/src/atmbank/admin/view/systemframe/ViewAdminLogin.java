@@ -150,7 +150,7 @@ public class ViewAdminLogin extends javax.swing.JFrame {
         String password = String.valueOf(txtpassword.getPassword());
         if(!username.equals("") && !password.equals("")){
             AdminController adminController = new AdminController();
-            if(adminController.LoginAdminSystem(username, password)){
+            if(adminController.loginAdminSystem(username, password)){
                 sysUser = adminController.getUserByUsername(username);
                 SystemAdmin systemAdmin = new SystemAdmin(this,sysUser);
                 systemAdmin.setVisible(true);

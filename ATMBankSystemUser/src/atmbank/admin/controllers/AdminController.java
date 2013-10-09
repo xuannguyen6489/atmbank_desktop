@@ -45,7 +45,7 @@ public class AdminController extends CommonController {
     }
     //Method Login
 
-    public boolean LoginAdminSystem(String username, String password) {
+    public boolean loginAdminSystem(String username, String password) {
         //String sql = "select s from SystemUser s where s.userUsername = :username and s.userPassword = :password";
         String hashPassword;
         try {
